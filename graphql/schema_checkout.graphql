@@ -1,0 +1,14 @@
+#request
+input CheckoutItems {
+    items: [Item]
+}
+
+type Item {
+    sku: String!
+    qty: Int!
+}
+
+# response
+type CheckoutResult {
+    finalPrice: Int!
+}

@@ -1,0 +1,16 @@
+#request
+input AddToCartItem {
+    userId: String!
+    item: Item!
+}
+
+#response
+type Cart {
+    userId: String!
+    carts: [Item]
+}
+
+type Item {
+    sku: String!
+    qty: Int!
+}
